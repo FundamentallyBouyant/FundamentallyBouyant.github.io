@@ -1,0 +1,200 @@
+body{
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin:0;
+	background-color: #f3f3f3;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background: #343434;
+	color: white;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: orange 3px solid;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #name{
+	float: left;
+}
+
+header #name h1{
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header .bright, header .current a{
+	color: orange;
+	font-weight: bold;
+}
+header .current a{
+	border-bottom: orange 2px solid;
+}
+
+header a:hover{
+	color: orange;
+}
+
+#profession {
+min-height: 250px;
+background:url('../img/wallhaven.jpg') no-repeat center;
+background-size: cover;
+text-align: center;
+color: #ffffffe6;
+}
+
+#profession h1{
+font-size: 55px;
+margin: 0 10px 0 0;
+padding:20px;
+}
+
+#profession p{
+font-size: 20px;
+}
+
+#boxes{
+	text-align: center;
+}
+.box{
+	display:inline-block;
+	width:30%;
+	height: 100%;
+	vertical-align: top;
+	margin:auto;
+	padding-top:20px;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: orange;
+  text-align: center;
+  clear: both;
+}
+
+@media(max-width: 768px){
+  header #name,
+  header nav,
+  header nav li,
+  #boxes .box,
+  .contact label,
+  .contact input {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  #profession h1{
+    /*margin-top: 40px;*/
+  }
+
+}
+
+
+
+.contact div label {
+	width:100px;
+	display: inline-block;
+	vertical-align: top;
+	margin:2px;
+}
+
+
+#gallerycontainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7px;
+}
+
+#gallerycontainer div {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+  max-height: 60%;
+}
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+#gallerycontainer div:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  #gallerycontainer div {
+    width: calc(25% - 6px);
+  }
+  
+  #gallerycontainer div:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  #gallerycontainer div:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+#gallerycontainer div:hover img {
+  transform: scale(1.1);
+}
+
+#gallerycontainer figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+#gallerycontainer img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.deletebox{
+	float: right;
+}
