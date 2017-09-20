@@ -1,0 +1,1 @@
+var data = '[{"id" : "1","url" : "./img/1.jpg","name" : "lego1","info" : "lego photo","date_uploaded" : ""},{"id" : "2","url" : "./img/2.jpg","name" : "lego2","info" : "lego photo","date_uploaded" : ""}]';

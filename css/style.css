@@ -92,12 +92,15 @@ font-size: 20px;
 }
 
 footer{
-  padding: 20px;
-  margin-top: 20px;
-  color: #ffffff;
-  background-color: orange;
-  text-align: center;
-  clear: both;
+/*	position: absolute;
+	bottom: 0;*/
+	width: 100%;
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: orange;
+	text-align: center;
+	clear: both;
 }
 
 @media(max-width: 768px){
@@ -132,6 +135,24 @@ footer{
 }
 
 
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#addImg{
+	background-color: orange;
+}
+
+#gallery-heading{
+	text-align: center;
+}
+
 #gallerycontainer{
   display: flex;
   flex-wrap: wrap;
@@ -145,17 +166,6 @@ footer{
   margin-right: 8px;
   text-decoration: none;
   color: black;
-}
-.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
 }
 
 #gallerycontainer div:nth-of-type(2n) {
@@ -196,4 +206,75 @@ footer{
 
 .deletebox{
 	float: right;
+}
+
+.center{
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 50%;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	background: grey;
+	border-bottom: 3px orange solid;
+}
+
+
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: orange; }
+
+#deleteImg{
+	background-color: #f44336;
+}
+
+#modifyImg{
+	background-color: #4CAF50;
+}
+
+#editImgButton{
+	background-color: #4CAF50;
+}
+
+#addImgButton{
+	background-color: orange;
 }
